@@ -1,0 +1,19 @@
+/*
+Enter your query here.
+*/
+
+
+-- Shortest City
+
+SELECT CITY, LENGTH(CITY)
+FROM STATION
+ORDER BY LENGTH(CITY), CITY
+LIMIT 1;
+
+
+-- Longest City
+
+SELECT CITY, LENGTH(CITY)
+FROM STATION
+ORDER BY LENGTH(CITY) DESC, CITY
+LIMIT 1;
